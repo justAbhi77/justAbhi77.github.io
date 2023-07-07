@@ -1,0 +1,59 @@
+#preloader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: #11191f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.loader {
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    animation-iteration-count: infinite !important;
+    animation-duration: 2s !important;
+    animation-delay: 0s !important;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    display: block;
+    border: 32px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: weld-rotate 2s infinite ease-in;
+}
+
+.loader:before {
+    border-top-color: #1095c1;
+    border-color: transparent transparent transparent #1095c1;
+    animation-delay: 0.5s !important;
+}
+
+@keyframes weld-rotate {
+
+    0%,
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50%,
+    75% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
