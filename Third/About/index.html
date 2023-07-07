@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="css/pico.min_Modified_1.5.10.css">
     <link rel="stylesheet" href="css/Main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
     <title>Page Loader Animation.</title>
 </head>
 
@@ -14,6 +22,115 @@
     <div id="preloader">
         <span class="loader"></span>
     </div>
+
+    <!-- Main Website Begins Here -->
+    <nav class="container" style="margin-bottom: 0%;">
+        <ul>
+            <li><strong>PORTFOLIO</strong></li>
+        </ul>
+        <ul>
+            <div style="width: 100%;">
+                <li><a href="#" id="about-btn">About</a></li>
+                <li><a href="#" id="acad-btn">Academics</a></li>
+                <li><a href="..\Contact\index.html">Contact Me</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- General Section -->
+    <hgroup class="container">
+        <h1 id="main-title">Hi, I am Abhinav Ojha.</h1>
+        <p id="main-title-tag">An Aspiring Game Developer.</p>
+        <a id="resume-btn" href="https://drive.google.com/file/d/1SMRRvoKt0gOEDf3H9ZO4E1ZVrbJgb78x/view?usp=share_link"
+            role="button" class="primary outline" target="_blank" rel="noopener noreferrer">Get My Resume</a>
+    </hgroup>
+
+    <!-- About Section -->
+    <section class="container" id="about-section">
+        <h3>Professionally</h3>
+        <p>
+            My passion for video games and technology has led me to pursue a career in game development,
+            specifically as a gameplay programmer.
+            I enjoy experimenting with new tools and ideas to create innovative and engaging gameplay experiences.
+            I am passionate about developing games and solving problems.
+            I am always looking for new ways to push the boundaries.
+        </p>
+        <h3>Personally</h3>
+        <p>
+            A wannabe Professional Button Masher.
+            When I'm not coding my next big game, you can find me playing multiplayer games and getting dominated by
+            the competition.
+            Speaking of friends, I love hanging out with <span
+                style="font-family: TheBoysFont; color: rgb(150, 0, 0);"><strong>THE BOYS</strong></span>, whether
+            it's playing video games, or just discussing the latest anime series.
+            <br>
+            And lastly, I'm an avid fan of <span class="roboto-content"><strong>ROBOTO</strong></span> font, it just
+            screams <span class="roboto-content"><strong>'I'm futuristic and cool'</strong></span>, don't you think?
+            I may be a nerd, but I'm a cool nerd. That's all from me, now back to my game.
+        </p>
+        <h3>Projects</h3>
+        <div id="grid"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container" id="skills-section">
+        <h3>Skills</h3>
+
+        <div class="grid">
+            <div>
+                <p>
+                    Being an aspiring professional in the Games Industry, my skills are wideranging.
+                    They span across multiple disciplines like Programming, Creative, Backend, and many more.
+                    The following are some of the Softwares/Tools, I am really comfortable in and believe to have
+                    certain level of mastery.
+                </p>
+                <blockquote>
+                    "Right knowledge is the ultimate solution to all our problems"
+                    <footer>
+                        <cite>- Shri Krishna, Bhagavad Gita</cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div>
+                <span class="Sphere"></span>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div>
+                <hgroup>
+                    <p>Programming</p>
+                    <progress value="85" max="100"></progress>
+                </hgroup>
+                <hgroup>
+                    <p>3D Modeling</p>
+                    <progress value="50" max="100"></progress>
+                </hgroup>
+            </div>
+            <div>
+                <hgroup>
+                    <p>Design</p>
+                    <progress value="60" max="100"></progress>
+                </hgroup>
+                <hgroup>
+                    <p>UI/UX Development</p>
+                    <progress value="75" max="100"></progress>
+                </hgroup>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container" style="margin-bottom: auto;">
+            &#169; <a href="https://github.com/justAbhi77" target="_blank" rel="noopener noreferrer">Abhinav Ojha</a>, 2023. Template Developed with &#9829; by <a href="https://github.com/kushagra10025"
+                target="_blank" rel="noopener noreferrer">Kushagra</a>.
+    </footer>
+
 </body>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.3.2/dist/TagCloud.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="js/Main.js"></script>
 
 </html>
