@@ -67,3 +67,43 @@ var tagCloud = TagCloud('.Sphere', Texts, {
     direction: 135,
     keep: true
 });
+
+// Website Navigation
+const mainTitle = document.getElementById("main-title");
+const titleTag = document.getElementById("main-title-tag");
+const resumeBtn = document.getElementById("resume-btn");
+
+const aboutSec = document.getElementById("about-section");
+const skillsSec = document.getElementById("skills-section");
+const acadSec = document.getElementById("education-section");
+
+const aboutBtn = document.getElementById("about-btn");
+const skillsBtn = document.getElementById("skills-btn");
+const acadBtn = document.getElementById("acad-btn");
+
+// Prevent Right Click
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+aboutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutSec.hidden = false;
+    skillsSec.hidden = false;
+    acadSec.hidden = true;
+    resumeBtn.hidden = false;
+
+    mainTitle.innerText = "Hi, I am Abhinav Ojha.";
+    titleTag.innerText = "An Aspiring Game Developer.";
+});
+
+acadBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutSec.hidden = true;
+    skillsSec.hidden = true;
+    acadSec.hidden = false;
+    resumeBtn.hidden = true;
+
+    mainTitle.innerText = "Academics.";
+    titleTag.innerText = "A Gift that none can take away.";
+});
