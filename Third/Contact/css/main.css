@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+}
+.socials {
+    text-align: center;
+}
+.socials a {
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+}

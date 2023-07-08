@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="../css/pico.min_Modified_1.5.10.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+	<title>Contact Me</title>
+</head>
+
+<body>
+
+	<!-- Main Website Begins Here -->
+	<nav class="container" style="margin-bottom: 0%;">
+		<ul>
+			<li><strong><a href="../About/index.html">PORTFOLIO</a></strong></li>
+		</ul>
+	</nav>
+
+	<main class="container" style="padding-top: 0%;padding-bottom: 0%;">
+		<hgroup>
+			<h1>
+				<span>Get in Touch!</span>
+			</h1>
+			<h2>
+				Please feel free to contact me with feedbacks, Job Opportunites or Just to Say Hi!!!
+			</h2>
+		</hgroup>
+		<hr>
+		<div class="socials">
+			<a href="mailto:ojhaabhinav2016@gmail.com" target="_blank" rel="noopener noreferrer"><i
+					class="fa-solid fa-envelope"></i></a>
+			<a href="https://github.com/justAbhi77" target="_blank" rel="noopener noreferrer"><i
+					class="fa-brands fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/abhinav-ojha-bbab47216/" target="_blank" rel="noopener noreferrer"><i
+					class="fa-brands fa-linkedin"></i></a>
+		</div>
+		<hr>
+		<div>
+			<span id="response-text-holder" hidden><mark id="response-text">Response Message Here</mark></span>
+			<progress id="progress-bar" indeterminate="true" hidden></progress>
+			<form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+				<input type="hidden" name="access_key" value="3ae9feeb-ef4a-442f-95b3-e98ce30cd999">
+				<input type="text" name="name" id="name" placeholder="Full Name" required>
+				<input type="email" name="email" id="email" placeholder="E-Mail" required>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
