@@ -1,18 +1,20 @@
 [
 	{
 		"name": "Project Wars",
-		"feature_image": "./images/ProjectWars.gif",
+		"feature_image": "https://i.imgur.com/afl0iEy.gif",
 		"feature_image_alt": "Project Wars",
-		"links": [],
+		"links": [
+			"github"
+		],
 		"tags": [
 			"C#",
 			"Unity"
 		],
-		"description": "My attemp at a 2d turn-based tile-based strategy Game."
+		"description": "A 2d turn-based tile-based strategy Game."
 	},
 	{
 		"name": "John Lemon : Haunted Mansion",
-		"feature_image": "./images/JohnLemon.gif",
+		"feature_image": "https://i.imgur.com/LQ258Zt.gif",
 		"feature_image_alt": "John Lemon : Haunted Mansion",
 		"links": [],
 		"tags": [
@@ -23,7 +25,7 @@
 	},
 	{
 		"name": "The One Ring",
-		"feature_image": "./images/OneRing.gif",
+		"feature_image": "https://i.imgur.com/z2CKOVw.gif",
 		"feature_image_alt": "The One Ring",
 		"links": [],
 		"tags": [
@@ -33,7 +35,7 @@
 	},
 	{
 		"name": "FruitNinja",
-		"feature_image": "./images/FruitNinja.gif",
+		"feature_image": "https://i.imgur.com/TP7Gnjy.gif",
 		"feature_image_alt": "FruitNinja",
 		"links": [],
 		"tags": [
@@ -44,8 +46,20 @@
 		"description": "Slice boxes and fruits that pass through the screen to score points with the occasional bombs in their midst."
 	},
 	{
+		"name": "The Last Guard",
+		"feature_image": "https://i.imgur.com/eXxDWTR.gif",
+		"feature_image_alt": "The Last Guard",
+		"links": [],
+		"tags": [
+			"C++",
+			"Unreal Engine",
+			"Blender"
+		],
+		"description": "An FPS style tower defence in 3d using Unreal Engine."
+	},
+	{
 		"name": "Escape Tank",
-		"feature_image": "./images/EscapeTank.gif",
+		"feature_image": "https://i.imgur.com/RaCtPoa.gif",
 		"feature_image_alt": "EscapeTank",
 		"links": [],
 		"tags": [

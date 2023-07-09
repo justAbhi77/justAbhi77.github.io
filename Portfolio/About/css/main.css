@@ -6,7 +6,7 @@
     height: 100%;
     width: 100%;
     background: #11191f;
-    position: absolute;
+    position: Fixed;
     top: 0;
     bottom: 0;
     left: 0;
