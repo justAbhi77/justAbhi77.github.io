@@ -7,7 +7,7 @@ window.addEventListener('load', (e) => {
 // Add projects to webpage when page is ready
 $(document).ready(function () {
     const gridDiv = $("#grid");
-    $.getJSON("Json/Projects.json", function (jsonData) {
+    $.getJSON("json/projects.json", function (jsonData) {
 
         for (let i = 0; i < jsonData.length; ++i) {
 
