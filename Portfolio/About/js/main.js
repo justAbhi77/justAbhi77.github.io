@@ -2,15 +2,12 @@
 preLoader = document.getElementById("preloader");
 window.addEventListener("load", (e) => {
   preLoader.hidden = true;
-  populateProjectsImage();
 });
 
 // Add projects to webpage when page is ready
 $(document).ready(() => {
   populateProjects();
 });
-
-var projectImages = [];
 
 function populateProjects() {
   const gridDiv = $("#grid");
@@ -40,7 +37,7 @@ function populateProjects() {
                                     <div class="box-content">
                                         <article>
                                             <div class="img-cont">
-                                            <img src="" alt="${jsonData[i].feature_image_alt}">
+                                            <img src="${jsonData[i].feature_image}" alt="${jsonData[i].feature_image_alt}">
                                             </div>
                                             <h4>${jsonData[i].name}</h4>
                                             <p class="project-rel-links">
@@ -57,15 +54,14 @@ function populateProjects() {
                                 </div>`;
 
       gridDiv.append(projectElement);
-      projectImages.push(jsonData[i].feature_image);
     }
   });
 }
 
 // TagCloud
 const Texts = [
-  "C",
   "CPP",
+  "C",
   "Java",
   "JavaFx",
   "Python",
@@ -131,16 +127,3 @@ acadBtn.addEventListener("click", (e) => {
   mainTitle.innerText = "Academics.";
   titleTag.innerText = "A Gift that none can take away.";
 });
-
-function populateProjectsImage() {
-  var gridDiv = document.getElementById("grid");
-
-  var gridChildren = gridDiv.children;
-
-  for (let index = 0; index < gridChildren.length; index++) {
-
-    var imgcontainer = gridChildren[index].children[0].children[0].children[0].children[0];
-
-    imgcontainer.src = projectImages[index];
-  }
-}
