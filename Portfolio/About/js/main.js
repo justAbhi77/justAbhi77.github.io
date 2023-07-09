@@ -55,6 +55,7 @@ function populateProjects() {
 
       gridDiv.append(projectElement);
     }
+    preLoader.hidden = true;
   });
 }
 
