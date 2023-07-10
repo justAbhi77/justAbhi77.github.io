@@ -82,7 +82,7 @@ const Texts = [
 ];
 
 var tagCloud = TagCloud(".Sphere", Texts, {
-  radius: 230,
+  radius: 200,
   maxSpeed: "normal",
   initSpeed: "fast",
   direction: 135,
