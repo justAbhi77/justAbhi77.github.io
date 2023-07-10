@@ -37,7 +37,7 @@ function populateProjects() {
                                     <div class="box-content">
                                         <article>
                                             <div class="img-cont">
-                                            <img src="${jsonData[i].feature_image}" alt="${jsonData[i].feature_image_alt}">
+                                            <img src="${jsonData[i].feature_image}" alt="${jsonData[i].feature_image_alt} loading="lazy">
                                             </div>
                                             <h4>${jsonData[i].name}</h4>
                                             <p class="project-rel-links">
@@ -88,6 +88,8 @@ var tagCloud = TagCloud(".Sphere", Texts, {
   direction: 135,
   keep: true,
 });
+
+tagCloud.$el.style.width = "-webkit-fill-available";
 
 // Website Navigation
 const mainTitle = document.getElementById("main-title");
