@@ -14,7 +14,6 @@ const Texts = [
     "Python",
     "C#",
     "Unreal",
-    "Unity",
     "Godot",
     "QT",
     "MySQL",
