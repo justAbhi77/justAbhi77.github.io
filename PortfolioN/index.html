@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.6/pico.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Pre-Loader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav class="container" style="margin-bottom: 0%;">
+        <ul>
+            <li><strong>PORTFOLIO</strong></li>
+        </ul>
+        <ul>
+            <div style="width: 100%;">
+                <li><a href="#" id="about-btn">About</a></li>
+                <li><a href="#" id="acad-btn">Academics</a></li>
+                <li><a href="#" id="cnt-btn">Contact Me</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Main Website -->
+    <div>
+        <!-- General Section -->
+        <hgroup class="container">
+            <h1 id="main-title">Hi, I am Abhinav Ojha.</h1>
+            <p id="main-title-tag">An Aspiring Game Developer.</p>
+            <a id="resume-btn"
+                href="https://drive.google.com/file/d/1SMRRvoKt0gOEDf3H9ZO4E1ZVrbJgb78x/view?usp=share_link"
+                role="button" class="primary outline" target="_blank" rel="noopener noreferrer">Get My Resume</a>
+        </hgroup>
+
+        <!-- About Section -->
+        <section class="container noBottomMargin" id="about-section">
+            <h3>Professionally</h3>
+            <p>
+                My passion for video games and technology has led me to pursue a career in game development,
+                specifically as a gameplay programmer.
+                I enjoy experimenting with new tools and ideas to create innovative and engaging gameplay experiences.
+                I am passionate about developing games and solving problems.
+                I am always looking for new ways to push the boundaries.
+            </p>
+            <h3>Personally</h3>
+            <p>
+                A wannabe Professional Button Masher.
+                When I'm not coding my next big game, you can find me playing multiplayer games and getting dominated by
+                the competition.
+                Speaking of friends, I love hanging out with <span
+                    style="font-family: TheBoysFont; color: rgb(150, 0, 0);"><strong>THE BOYS</strong></span>, whether
+                it's playing video games, or just discussing the latest anime series.
+                <br>
+                And lastly, I'm an avid fan of <span class="roboto-content"><strong>ROBOTO</strong></span> font, it just
+                screams <span class="roboto-content"><strong>'I'm futuristic and cool'</strong></span>, don't you think?
+                I may be a nerd, but I'm a cool nerd. That's all from me, now back to my game.
+            </p>
+            <h3>Projects (<a href="https://github.com/justAbhi77?tab=repositories" target="_blank">View All</a>)</h3>
+            <div id="grid"></div>            
+        </section>
+        <!-- Skills Section -->
+        <section class="container noBottomMargin" id="skills-section">
+            <h3>Skills</h3>
+
+            <div class="grid">
+                <div>
+                    <p>
+                        Being an aspiring professional in the Games Industry, my skills are wideranging.
+                        They span across multiple disciplines like Programming, Creative, Backend, and many more.
+                        The following are some of the Softwares/Tools, I am really comfortable in and believe to have
+                        certain level of mastery.
+                    </p>
+                    <blockquote>
+                        "Right knowledge is the ultimate solution to all our problems"
+                        <footer>
+                            <cite>- Shri Krishna, Bhagavad Gita</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <span class="Sphere"></span>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <hgroup>
+                        <p>Programming</p>
+                        <progress value="85" max="100"></progress>
+                    </hgroup>
+                    <hgroup>
+                        <p>3D Modeling</p>
+                        <progress value="25" max="100"></progress>
+                    </hgroup>
+                </div>
+                <div>
+                    <hgroup>
+                        <p>Design</p>
+                        <progress value="45" max="100"></progress>
+                    </hgroup>
+                    <hgroup>
+                        <p>UI/UX Development</p>
+                        <progress value="75" max="100"></progress>
+                    </hgroup>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Section -->
+        <section class="container noBottomMargin" id="education-section" hidden>
+            <h3>Education</h3>
+            <table role="grid">
+                <thead>
+                    <tr>
+                        <th scope="col"><b>#</b></th>
+                        <th scope="col"><b>Insitution</b></th>
+                        <th scope="col"><b>Course</b></th>
+                        <th scope="col"><b>Grade</b></th>
+                        <th scope="col"><b>Graduation</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Institute of Engineering & Management, WB, IND</td>
+                        <td>BCA</td>
+                        <td>9.14 GPA</td>
+                        <td>May 2022</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>M.C.Kejriwal Vidyapeeth, WB, IND</td>
+                        <td>XII<sup>th</sup> ICSE</td>
+                        <td>82 %</td>
+                        <td>May 2019</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>M.C.Kejriwal Vidyapeeth, WB, IND</td>
+                        <td>X<sup>th</sup> ICSE</td>
+                        <td>88 %</td>
+                        <td>May 2017</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Certifications</h3>
+            <ul>
+                <li>Core Interaction Programming in Unity - Coursera - Oct 2020</li>
+                <li>Application Systems Programming in Unity - Coursera - Sep 2020</li>
+                <li>Introduction to Game Development by Michigan State University - Coursera - Sep 2020</li>
+                <li>Introduction to C# Programming and Unity by University of Colorado - Coursera - Sep 2020</li>
+            </ul>
+        </section>
+
+        <section class="container noBottomMargin" id="ContactForm" hidden>
+            <main class="container" style="padding-top: 0%;padding-bottom: 0%;">
+                <hgroup>
+                    <h1>
+                        <span>Get in Touch!</span>
+                    </h1>
+                    <h2>
+                        Please feel free to contact me with feedbacks, Job Opportunites or Just to Say Hi!!!
+                    </h2>
+                </hgroup>
+                <hr>
+                <div class="socials">
+                    <a href="mailto:ojhaabhinav2016@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/justAbhi77" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhinav-ojha-bbab47216/" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <hr>
+                <div>
+                    <span class="frmSub" id="response-text-holder" hidden><mark id="response-text">Response Message
+                            Here</mark></span>
+                    <progress id="progress-bar" indeterminate="true" hidden></progress>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                        <input type="hidden" name="access_key" value="3ae9feeb-ef4a-442f-95b3-e98ce30cd999">
+                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                            required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </main>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="container" style="margin-bottom: auto;">
+        &#169; <a href="https://github.com/justAbhi77" target="_blank" rel="noopener noreferrer">Abhinav Ojha</a>, 2023.
+        Template Developed with &#9829; by <a href="https://github.com/kushagra10025" target="_blank"
+            rel="noopener noreferrer">Kushagra</a>.
+    </footer>
+</body>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.3.2/dist/TagCloud.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
