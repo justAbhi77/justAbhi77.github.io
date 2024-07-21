@@ -1,5 +1,37 @@
 [
 	{
+		"name": "Catan",
+		"feature_image": "https://i.imgur.com/IMCDq1V.png",
+		"feature_image_alt": "Unreal TPS",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/justAbhi77/GodotHexagon"
+			}
+		],
+		"tags": [
+			"Gdscript",
+			"Godot"
+		],
+		"description": "A fan-made catan clone developed in godot (Work in progress)."
+	},
+	{
+		"name": "Turn-Based Tactical Strategy",
+		"feature_image": "https://i.imgur.com/Y06VCOU.png",
+		"feature_image_alt": "Unreal TPS",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/justAbhi77/TurnBasedTacticalCombat"
+			}
+		],
+		"tags": [
+			"C++",
+			"Unreal Engine"
+		],
+		"description": "This project is designed to provide a comprehensive framework for developing a turnbased tactical game with a variety of features and functionalities."
+	},
+	{
 		"name": "Unreal TPS by Stephen Ulibarri",
 		"feature_image": "https://i.imgur.com/GgfuIdt.gif",
 		"feature_image_alt": "Unreal TPS",
