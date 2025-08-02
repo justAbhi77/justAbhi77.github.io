@@ -1,5 +1,39 @@
 [
 	{
+		"name": "Unreal Gameplay Ability System",
+		"feature_image": "https://i.imgur.com/WZLxWxs.gif",
+		"feature_image_alt": "Unreal Gameplay Ability System",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/justAbhi77/UnrealGAS"
+			}
+		],
+		"tags": [
+			"C++",
+			"GAS",
+			"Unreal Engine"
+		],
+		"description": "A fan-made catan clone developed in godot (Work in progress)."
+	},
+	{
+		"name": "Third person Shooter",
+		"feature_image": "https://i.imgur.com/Juq8Nt7.gif",
+		"feature_image_alt": "Unreal TPS",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/justAbhi77/SteamShooter"
+			}
+		],
+		"tags": [
+			"C++",
+			"Steam",
+			"Unreal Engine"
+		],
+		"description": "A fan-made catan clone developed in godot (Work in progress)."
+	},
+	{
 		"name": "Catan",
 		"feature_image": "https://i.imgur.com/IMCDq1V.png",
 		"feature_image_alt": "Unreal TPS",
@@ -48,22 +82,6 @@
 		"description": "A simple Third-Person-Shooter developed in Unreal Engine."
 	},
 	{
-		"name": "Project Wars",
-		"feature_image": "https://i.imgur.com/afl0iEy.gif",
-		"feature_image_alt": "Project Wars",
-		"links": [
-			{
-				"id": "github",
-				"url": "https://github.com/justAbhi77/ProjectWars"
-			}
-		],
-		"tags": [
-			"C#",
-			"Unity"
-		],
-		"description": "A 2d turn-based tile-based strategy Game."
-	},
-	{
 		"name": "John Lemon : Haunted Mansion",
 		"feature_image": "https://i.imgur.com/LQ258Zt.gif",
 		"feature_image_alt": "John Lemon : Haunted Mansion",
@@ -110,23 +128,6 @@
 			"Unity"
 		],
 		"description": "Slice boxes and fruits that pass through the screen to score points with the occasional bombs in their midst."
-	},
-	{
-		"name": "The Last Guard",
-		"feature_image": "https://i.imgur.com/eXxDWTR.gif",
-		"feature_image_alt": "The Last Guard",
-		"links": [
-			{
-				"id": "github",
-				"url": "https://github.com/justAbhi77/TowerDefence3D"
-			}
-		],
-		"tags": [
-			"C++",
-			"Unreal Engine",
-			"Blender"
-		],
-		"description": "An TPS styled tower defence in 3d using Unreal Engine."
 	},
 	{
 		"name": "Escape Tank",
