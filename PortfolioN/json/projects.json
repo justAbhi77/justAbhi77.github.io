@@ -14,7 +14,7 @@
 			"GAS",
 			"Unreal Engine"
 		],
-		"description": "A fan-made catan clone developed in godot (Work in progress)."
+		"description": "A Top down dungeon crawler game that showcases the Unreal Gameplay Ability System (GAS) with a focus on abilities, attributes, and effects."
 	},
 	{
 		"name": "Third person Shooter",
@@ -31,7 +31,7 @@
 			"Steam",
 			"Unreal Engine"
 		],
-		"description": "A fan-made catan clone developed in godot (Work in progress)."
+		"description": "A basic unreal multiplayer third-person shooter game that uses steam for multiplayer functionality."
 	},
 	{
 		"name": "Catan",
