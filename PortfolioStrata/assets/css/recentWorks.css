@@ -1,0 +1,134 @@
+
+
+/* ===== Card Container ===== */
+.CardVerticle {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.CardVerticle:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* ===== Image Wrapper ===== */
+.CardImage {
+    position: relative;
+    overflow: hidden;
+}
+
+.CardImage img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Image zoom on hover */
+.CardVerticle:hover .CardImage img {
+    transform: scale(1.1);
+}
+
+/* ===== Overlay ===== */
+.CardOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.CardVerticle:hover .CardOverlay {
+    opacity: 1;
+}
+
+/* ===== Fullscreen Button ===== */
+.CardPopupBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    text-decoration: none;   /* remove underline */
+}
+
+.CardPopupBtn::before {
+    font-size: 18px;
+    color: #333;
+}
+
+.CardPopupBtn:hover {
+    background: #000;
+}
+
+.CardPopupBtn:hover::before {
+    color: #fff;
+}
+
+/* ===== Icon List ===== */
+.CardIconList {
+    display: flex;
+    gap: 12px;
+}
+
+/* Example GitHub Icon */
+.CardIconGithub {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    text-decoration: none;   /* remove underline */
+}
+
+.CardIconGithub::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #333;
+}
+
+.CardIconGithub:hover {
+    background: #333;
+}
+
+.CardIconGithub:hover::before {
+    color: #fff;
+}
+
+/* ===== Text Area ===== */
+.CardText {
+    padding: 20px;
+}
+
+.CardText h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.CardText p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}

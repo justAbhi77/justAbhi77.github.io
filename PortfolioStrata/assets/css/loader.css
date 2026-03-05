@@ -1,0 +1,159 @@
+/* Wrapper */
+.loading-btn-wrapper {
+  display: block;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+}
+
+.loading-btn-wrapper + .loading-btn-wrapper {
+  margin-left: 8px;
+}
+
+/* Button base */
+.loading-btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 0.35em;
+  border: solid 3px #efefef;
+  color: #787878 !important;
+  cursor: pointer;
+  transition: all .33s ease-in-out;
+  outline: none;
+}
+
+.loading-btn:hover {
+    border-color: #49bf9d;
+    color: #49bf9d !important;
+}
+
+/* Shared state styles */
+.loading-btn--pending,
+.loading-btn--success,
+.loading-btn--fail {
+  width: 40px;
+  pointer-events: none;
+  cursor: default;
+}
+
+.loading-btn--pending .loading-btn__text,
+.loading-btn--success .loading-btn__text,
+.loading-btn--fail .loading-btn__text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Pending state */
+.loading-btn--pending:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  height: 28px; /* 40px * .7 */
+  width: 28px;
+  border: 3px solid rgba(255, 255, 255, .33);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation:
+    loading-btn--fade-in .33s ease,
+    loading-btn--rotation .66s linear 0s infinite;
+}
+
+/* Success state */
+.loading-btn--success,
+.loading-btn--success:hover {
+  background: #8bc34a;
+}
+
+.loading-btn--success:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  height: 25%;
+  width: 50%;
+  border: 3px solid #fff;
+  border-top-width: 0;
+  border-right-width: 0;
+  transform: translate(-50%, -75%) rotate(-45deg);
+  animation: loading-btn--fade-in .6s ease;
+}
+
+/* Fail state */
+.loading-btn--fail,
+.loading-btn--fail:hover {
+  background: #ff5722;
+}
+
+.loading-btn--fail:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  height: 65%;
+  width: 65%;
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 44%,
+      #fff 44%,
+      #fff 56%,
+      transparent 56%
+    ),
+    linear-gradient(
+      to right,
+      transparent 44%,
+      #fff 44%,
+      #fff 56%,
+      transparent 56%
+    );
+  transform: translate(-50%, -50%) rotate(-45deg);
+  animation: loading-btn--fade-in .6s ease;
+}
+
+/* Text */
+.loading-btn__text {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  color: #787878;
+  transition: inherit;
+}
+
+/* Animations */
+@keyframes loading-btn--fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes loading-btn--rotation {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Optical demo styles */
+.state-list {
+  margin-bottom: 12px;
+}
+
+.state-list .loading-btn-wrapper {
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 10px,
+    #f0f0f0 10px,
+    #f0f0f0 20px
+  );
+}
